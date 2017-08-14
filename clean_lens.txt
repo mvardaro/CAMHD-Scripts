@@ -1,0 +1,27 @@
+
+#############################################################################
+# CAM HD Script File: clean_lens.txt
+# Author: Mike Kenney
+# Date: 8/14/17
+#
+# Use the new brush to clean the camera lens.
+#
+#############################################################################
+# Initialize network and start video stream (to start pan/tilt)
+open 10.31.50.10
+start endpoint=10.20.2.125
+# Keep lights off because we are not recording
+lights 0
+# Tilt all the way down
+lookat tilt=140
+# Move counter-clockwise past the brush
+lookat pan=125
+sleep 1
+# Move clockwise past the brush
+lookat pan=175
+sleep 1
+# One more time ...
+lookat pan=125
+sleep 1
+lookat pan=175
+stop
