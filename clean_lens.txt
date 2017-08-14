@@ -13,15 +13,17 @@ start endpoint=10.20.2.125
 # Keep lights off because we are not recording
 lights 0
 # Tilt all the way down
-lookat tilt=140
+lookat tilt=140 speed=5
 # Move counter-clockwise past the brush
-lookat pan=125
+lookat pan=125 speed=5
 sleep 1
 # Move clockwise past the brush
-lookat pan=175
+lookat pan=175 speed=5
 sleep 1
 # One more time ...
-lookat pan=125
+lookat pan=125 speed=5
 sleep 1
-lookat pan=175
+lookat pan=175 speed=5
+# Go to parking position
+lookat pan=171 tilt=110 speed=5
 stop
