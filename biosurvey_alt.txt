@@ -28,30 +28,30 @@ sleep 5
 camera zoom=-6
 #############################################################################
 # move to level and vent center
-lookat pan=171 tilt=92 speed=5
+lookat pan=191 tilt=97 speed=5
 twait 01:12
 ##############################################################################
 # Background water column, use max light level to better see particulates
-lookat pan=143 tilt=52 speed=5
+lookat pan=163 tilt=57 speed=5
 lights 100
 camera zoom=6
 twait 02:00
 camera zoom=-13
 # Reduce lights to nominal
 lights 50
-lookat pan=171 tilt=92 speed=5
-twait 02:20
+lookat pan=191 tilt=97 speed=5
+twait 02:23
 #############################################################################
 # Biological scene 1
 # Top vent bio community
-lookat pan=169 tilt=58 speed=5
+lookat pan=189 tilt=63 speed=5
 sleep 5
 camera zoom=6
 sleep 5
 camera zoom=6
 twait 03:50
 camera zoom=-13
-lookat pan=171 tilt=92 speed=5
+lookat pan=191 tilt=97 speed=5
 twait 04:26
 #############################################################################
 # Biological scene 2
@@ -63,48 +63,48 @@ sleep 5
 camera zoom=6
 twait 05:38
 camera zoom=-13
-lookat pan=171 tilt=92 speed=5
+lookat pan=191 tilt=97 speed=5
 twait 06:14
 #############################################################################
 # Biological scene 3
 # Mid-right vent, green tube worms
-lookat pan=180 tilt=70 speed=5
+lookat pan=200 tilt=75 speed=5
 sleep 5
 camera zoom=6
 sleep 5
 camera zoom=6
 twait 07:22
 camera zoom=-13
-lookat pan=171 tilt=92 speed=5
+lookat pan=191 tilt=97 speed=5
 twait 07:57
 ############################################################################
 # Biological scene 4
 # Blue covered tube worms, ciliat
-lookat pan=159 tilt=94 speed=5
+lookat pan=179 tilt=99 speed=5
 sleep 5
 camera zoom=6
 sleep 5
 camera zoom=6
 twait 09:02
 camera zoom=-13
-lookat pan=171 tilt=92 speed=5
+lookat pan=191 tilt=97 speed=5
 twait 09:35
 ############################################################################
 # Biological scene 5
 # "fleas"
-lookat pan=171 tilt=92 speed=5
+lookat pan=191 tilt=97 speed=5
 sleep 5
 camera zoom=6
 sleep 5
 camera zoom=6
 twait 10:35
 camera zoom=-13
-lookat pan=171 tilt=92 speed=5
+lookat pan=191 tilt=97 speed=5
 twait 10:58
 ############################################################################
 # Biological scene 6
 # Vent base, picnogonas
-lookat pan=171 tilt=138 speed=5
+lookat pan=191 tilt=140 speed=5
 # Increase light level due to extream tilt angle and black sediment
 lights 75
 sleep 5
@@ -112,23 +112,23 @@ sleep 5
 camera zoom=6
 twait 11:58
 camera zoom=-7
-lookat pan=171 tilt=92 speed=5
+lookat pan=191 tilt=97 speed=5
 twait 12:28
 ############################################################################
 # Geophysical position 1
 # Vent chimney on right side
-lookat pan=190 tilt=108 speed=5
+lookat pan=210 tilt=113 speed=5
 sleep 5
 camera zoom=4
 twait 13:23
 camera zoom=-9
 sleep 5
-lookat pan=171 tilt=92 speed=5
+lookat pan=191 tilt=97 speed=5
 twait 13:58
 ############################################################################
 # Move to parking position, point camera down a bit to avoid picking up
 # material on lens
-lookat pan=171 tilt=110 speed=5
+lookat pan=191 tilt=115 speed=5
 sleep 5
 ############################################################################
 # Stop recording and end stream
