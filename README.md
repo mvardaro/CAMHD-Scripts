@@ -12,7 +12,8 @@ The encode system runs the *camera server* and the decode system runs the
 ## Command Syntax
 
 Only one command is allowed per line and all lines must be terminated with
-a linefeed character. Lines starting with `#` are treated as comments.
+a linefeed character (or carriage-return/linefeed combination). Lines
+starting with `#` are treated as comments.
 
 Command arguments in brackets are optional.
 
@@ -20,19 +21,19 @@ Command arguments in brackets are optional.
 
   Open a network connection to the server at IP address *address*. This
   command must be issued before any others.
-  
+
 - **close**
 
   Close the network connection.
-  
+
 - **sleep** *seconds*
 
   Pause for a specified number of seconds.
-  
+
 - **adread**
 
   Read the engineering A/D channels.
-  
+
 - **start** endpoint=*address* [nosensor=1]
 
   Power-on the video camera, pan/tilt unit, lights, attitude sensor and
@@ -40,12 +41,12 @@ Command arguments in brackets are optional.
   computer**. If the optional *nosensor* argument is specified, the
   attitude sensor will be disabled. All of the subsequent commands can
   only be issued if the video stream has been started.
-  
+
 - **lights** *intensity1* [ *intensity2* ]
 
   Set the intensity of the lights as a percentage between 0 and 100. If
   only one value is given, it is applied to both lights.
-  
+
 - **lookat** [ pan=*angle* ][ tilt=*angle* ][ speed=*deg/s* ]
 
   Adjust the camera orientation. The camera orientation is adjusted using
@@ -58,18 +59,18 @@ Command arguments in brackets are optional.
 
   If no arguments are given, this command returns the current orientation
   values.
-  
+
 - **camera** [ zoom=*steps* ][ laser=<on|off> ]
 
   Adjust video camera settings. The zoom setting is in steps relative to
   the current setting, a positive value zooms in and a negative value
   zooms out. If no arguments are given, the current settings are returned.
-  
+
 - **twait** *HH:MM:SS*
 
   Pause command processing until an absolute time relative to the start of
   the video stream.
-  
+
 - **stop**
 
   Stop the video stream and power-off all peripheral devices.
