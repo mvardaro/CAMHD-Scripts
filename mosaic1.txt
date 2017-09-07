@@ -9,9 +9,13 @@
 # were determined empirically and are zoon level dependent.  The positions
 # were selected to have some overlap both vertically and horizontally.
 ##############################################################################
-# initial start position
+# Initialize network and start video stream
+open 10.31.50.10
+start endpoint=10.20.2.125 nosensor=1
+lights 50
 lookat pan=170 tilt=90 speed=5
-camera zoom=-9
+# zoom all the way out
+camera zoom=-13
 #
 #############################################################################
 # set zoom level
@@ -140,3 +144,4 @@ sleep 5
 # Go back to home position
 camera zoom=-9
 lookat pan=170 tilt=90
+stop
