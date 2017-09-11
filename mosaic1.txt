@@ -2,12 +2,13 @@
 # CAM HD Script File: mosaic1.txt
 # Author: Russ Light
 # Creation Date: 7/13/15
+# Modified: MK 9/7/17
 # CAM HD S/N: P2
 #
-# This CAM HD script is designed to move the camera into a series of positions
-# that would allow the creation of a mosaic to be created.  The positions
-# were determined empirically and are zoon level dependent.  The positions
-# were selected to have some overlap both vertically and horizontally.
+# This CAM HD script is designed to move the camera into a series of
+# positions that would allow the creation of a mosaic.  The positions were
+# determined empirically and are zoom level dependent.  The positions were
+# selected to have some overlap both vertically and horizontally.
 ##############################################################################
 # Initialize network and start video stream
 open 10.31.50.10
@@ -19,129 +20,129 @@ camera zoom=-13
 #
 #############################################################################
 # set zoom level
-camera zoom=4
+camera zoom=2
 #############################################################################
 # Tilt Position #1
-lookat pan=140 tilt=51
+lookat pan=140 tilt=54
 sleep 5
-lookat pan=155
+lookat pan=157
 sleep 5
-lookat pan=170
+lookat pan=175
 sleep 5
-lookat pan=185
+lookat pan=193
 sleep 5
-lookat pan=200
+lookat pan=210
 sleep 5
 ##############################################################################
 # Tilt Position #2
-lookat tilt=58
+lookat tilt=64
 sleep 5
-lookat pan=185
+lookat pan=193
 sleep 5
-lookat pan=170
+lookat pan=175
 sleep 5
-lookat pan=155
+lookat pan=157
 sleep 5
 lookat pan 140
 sleep 5
 #############################################################################
 # Tilt Position #3
-lookat tilt=65
+lookat tilt=74
 sleep 5
-lookat pan=155
+lookat pan=158
 sleep 5
-lookat pan=170
+lookat pan=175
 sleep 5
-lookat pan=185
+lookat pan=193
 sleep 5
-lookat pan=200
+lookat pan=210
 sleep 5
 #############################################################################
 # Tilt Position #4
-lookat tilt=72
+lookat tilt=84
 sleep 5
-lookat pan=185
+lookat pan=193
 sleep 5
-lookat pan=170
+lookat pan=175
 sleep 5
-lookat pan=155
+lookat pan=158
 sleep 5
 lookat pan=140
 sleep 5
 #############################################################################
 # Tilt Position #5
-lookat tilt=79
+lookat tilt=94
 sleep 5
-lookat pan=155
+lookat pan=158
 sleep 5
-lookat pan=170
+lookat pan=175
 sleep 5
-lookat pan=185
+lookat pan=193
 sleep 5
-lookat pan=200
+lookat pan=210
 sleep 5
 #############################################################################
 # Tilt Position #6
-lookat tilt=86
+lookat tilt=103
 sleep 5
-lookat pan=185
+lookat pan=193
 sleep 5
-lookat pan=170
+lookat pan=175
 sleep 5
-lookat pan=155
+lookat pan=158
 sleep 5
 lookat pan=140
 sleep 5
 #############################################################################
 # Tilt Position #7
-lookat tilt=93
+lookat tilt=112
 sleep 5
-lookat pan=155
+lookat pan=158
 sleep 5
-lookat pan=170
+lookat pan=175
 sleep 5
-lookat pan=185
+lookat pan=193
 sleep 5
-lookat pan=200
+lookat pan=210
 sleep 5
 #############################################################################
 # Tilt Position #8
-lookat tilt=100
+lookat tilt=121
 sleep 5
-lookat pan=185
+lookat pan=193
 sleep 5
-lookat pan=170
+lookat pan=175
 sleep 5
-lookat pan=155
+lookat pan=158
 sleep 5
 lookat pan=140
 sleep 5
 ##############################################################################
 # Tilt Position #9
-lookat tilt=107
+lookat tilt=130
 sleep 5
-lookat pan=155
+lookat pan=158
 sleep 5
-lookat pan=170
+lookat pan=175
 sleep 5
-lookat pan=185
+lookat pan=193
 sleep 5
-lookat pan=200
+lookat pan=210
 sleep 5
 #############################################################################
 # Tilt Position #10
-lookat tilt=114
+lookat tilt=140
 sleep 5
-lookat pan=185
+lookat pan=193
 sleep 5
-lookat pan=170
+lookat pan=175
 sleep 5
-lookat pan=155
+lookat pan=158
 sleep 5
 lookat pan=140
 sleep 5
 #############################################################################
 # Go back to home position
-camera zoom=-9
-lookat pan=170 tilt=90
+camera zoom=-13
+lookat pan=171 tilt=110
 stop
