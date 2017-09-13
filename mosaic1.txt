@@ -145,4 +145,5 @@ sleep 5
 # Go back to home position
 camera zoom=-13
 lookat pan=171 tilt=110
+lights 0
 stop
