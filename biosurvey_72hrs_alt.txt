@@ -16,7 +16,7 @@
 #############################################################################
 # Initialize network and start video stream
 open 10.31.50.10
-start endpoint=10.20.2.125 nosensor=1 lights=light_2
+start endpoint=10.20.2.125
 #############################################################################
 # Setup camera for initial settings
 # zoom all the way back
