@@ -9,7 +9,7 @@
 #############################################################################
 # Initialize network and start video stream (to start pan/tilt)
 open 10.31.50.10
-start endpoint=10.20.2.125
+start endpoint=10.20.1.125
 # Keep lights off because we are not recording
 lights 0
 # Tilt all the way down
