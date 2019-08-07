@@ -34,15 +34,17 @@ Command arguments in brackets are optional.
 
   Read the engineering A/D channels.
 
-- **start** endpoint=*address* [nosensor=1] [lights=NAME]
+- **start** endpoint=*address* [nosensor=1] [lights=NAME] [nopt=1]
 
   Power-on the video camera, pan/tilt unit, lights, attitude sensor and
   start the video stream. *Address* is the IP address of the **decode
   computer**. If the optional *nosensor* argument is specified, the
-  attitude sensor will be disabled. The optional *lights* argument can be
-  used to power-on only one of the lights, the value of *NAME* can be
-  either `light_1` or `light_2`. All of the subsequent commands can only
-  be issued if the video stream has been started.
+  attitude sensor will be disabled. If the optional *nopt* argument is
+  specified, the pan/tilt and attitude sensor will be disabled. The
+  optional *lights* argument can be used to power-on only one of the
+  lights, the value of *NAME* can be either `light_1` or `light_2`. All of
+  the subsequent commands can only be issued if the video stream has been
+  started.
 
 - **lights** *intensity1* [ *intensity2* ]
 
@@ -61,6 +63,8 @@ Command arguments in brackets are optional.
 
   If no arguments are given, this command returns the current orientation
   values.
+
+  This command will return an error if the pan/tilt has been disabled.
 
 - **camera** [ zoom=*steps* ][ laser=<on|off> ]
 
