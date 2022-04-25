@@ -12,7 +12,7 @@
 ##############################################################################
 # Initialize network and start video stream
 open 10.31.50.10
-start endpoint=10.20.1.125
+start endpoint=10.20.2.125
 lights 50
 lookat pan=170 tilt=90 speed=5
 # zoom all the way out
