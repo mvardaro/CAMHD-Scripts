@@ -7,7 +7,7 @@
 # This is designed to perform a biological survey
 # by examining a number of specific sites previously determined on the vent
 #
-# 2022-03-31: Tweak angles to fix routine in 2022 
+# 2022-03-31: Tweak angles to fix routine in 2022
 #             (mvardaro@uw.edu & mikek@apl.uw.edu)
 # 2021-08-30: Tweak angles for 2021 deployment position (mikek@apl.uw.edu)
 # 2018-07-04: Modified by amarburg@apl to use sensor and both lights again
@@ -112,7 +112,7 @@ camera zoom=6
 twait 11:58
 camera zoom=-13
 # Reduce lights to nominal
-Lights 50
+lights 50
 twait 12:28
 ############################################################################
 # Geophysical position 1
