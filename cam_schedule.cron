@@ -2,10 +2,11 @@
 # Crontab file to run camclient command scripts
 #####################################################
 SHELL=/bin/bash
-CMDFILE_STD=/home/rsn/Documents/biosurvey.txt
-CMDFILE_24HRS=/home/rsn/Documents/biosurvey_24hrs.txt
-CMDFILE_72HRS=/home/rsn/Documents/biosurvey_72hrs.txt
-CLEAN_LENS=/home/rsn/Documents/clean_lens.txt
+BATCHDIR=/home/rsn/repos/camhd-scripts
+CMDFILE_STD=biosurvey.txt
+CMDFILE_24HRS=biosurvey_24hrs.txt
+CMDFILE_72HRS=biosurvey_72hrs.txt
+CLEAN_LENS=clean_lens.txt
 # Run every 3 hours on most days
 0 */3 4-9,11-19,21-31 * * $HOME/.local/bin/runcamera.sh $CMDFILE_STD
 # Clean the lens every ~10 days at 01:00
