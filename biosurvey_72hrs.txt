@@ -1,12 +1,11 @@
 #############################################################################
 # CAM HD Script File: biosurvey2_full.txt
-# Author: Russ Light
-# Date: 7/10/15
-# CAM HD S/N: P2
 #
 # This is designed to perform a biological survey
 # by examining a number of specific sites previously determined on the vent
 #
+# 2023-06-15: Update endpoint IP address for the new encode computer and
+#             changed the file naming scheme.
 # 2022-03-31: Tweak angles to fix routine in 2022
 #             (mvardaro@uw.edu & mikek@apl.uw.edu)
 # 2021-08-30: Tweak angles for 2021 deployment position (mikek@apl.uw.edu)
