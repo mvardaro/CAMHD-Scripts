@@ -10,7 +10,7 @@ CLEAN_LENS=clean_lens.txt
 # Run every 3 hours on most days
 0 */3 4-9,11-19,21-31 * * $HOME/.local/bin/runcamera.sh $CMDFILE_STD
 # Clean the lens every ~10 days at 01:00
-0 1 5,15,25 * * $HOME/.local/bin/runcamera.sh $CLEAN_LENS
+# 0 1 5,15,25 * * $HOME/.local/bin/runcamera.sh $CLEAN_LENS
 # Run for 24 hours on the 10th and 20th of the month
 0 0 10,20 * * $HOME/.local/bin/runcamera.sh $CMDFILE_24HRS
 # Run for 72 hours on the 1st of the month
