@@ -4,6 +4,7 @@
 # This is designed to perform a biological survey
 # by examining a number of specific sites previously determined on the vent
 #
+# 2024-08-13: Update angles and light levels for 2024 routine
 # 2024-01-18: Update pan angles to operate with no tilt controls
 # 2023-06-15: Update endpoint IP address for the new encode computer and
 #             changed the file naming scheme.
@@ -31,98 +32,142 @@ sleep 5
 camera zoom=-6
 #############################################################################
 # move to level and vent center
-lookat pan=168 tilt=87 speed=5
+lookat pan=148 tilt=95 speed=5
 twait 02:56:00
 ##############################################################################
 # Background water column, use max light level to better see particulates;
-# Changed to go all the way to the right side to get out of the vent plume on the left
-lookat pan=210 tilt=87 speed=5
-# keeping lights at max for entire routine to deal with increased biofouling on lens
+lookat pan=200 tilt=70 speed=5
 lights 100
 camera zoom=6
 sleep 30
 camera zoom=-13
+# Reduce lights to nominal
+lights 50
 twait 03:00:00
 #############################################################################
 # Biological scene 1
-# Move all the way to the left side of the vent to start bio survey (can’t tilt up or down)
-lookat pan=145 tilt=87 speed=5
+# Top vent bio community, heavy vent flow
+lookat pan=140 tilt=80 speed=5
 sleep 5
 camera zoom=6
+# Increase lights
+lights 75
 sleep 5
 camera zoom=6
+# Increase lights
+lights 100
 twait 05:59:00
 camera zoom=-13
+# Reduce lights to nominal
+lights 50
 twait 06:00:00
 #############################################################################
 # Biological scene 2
-# Mid-left vent; white limpets, palm worms, heavy vent flow
-lookat pan=150 tilt=87 speed=5
+# Upper right vent, white limpets, palm worms, some vent flow
+lookat pan=155 tilt=80 speed=5
 sleep 5
 camera zoom=6
+# Increase lights
+lights 75
 sleep 5
 camera zoom=6
+# Increase lights
+lights 100
 twait 08:59:00
 camera zoom=-13
+# Reduce lights to nominal
+lights 50
 twait 09:00:00
 #############################################################################
 # Biological scene 3
-# Mid-left vent; limpets and tube worms
-lookat pan=155 tilt=87 speed=5
+# Mid-right vent, palm worms and tube worms
+lookat pan=159 tilt=94 speed=5
 sleep 5
 camera zoom=6
+# Increase lights
+lights 75
 sleep 5
 camera zoom=6
+# Increase lights
+lights 100
 twait 11:59:00
 camera zoom=-13
+# Reduce lights to nominal
+lights 50
 twait 12:00:00
 ############################################################################
 # Biological scene 4
-# Middle of vent; tube worms, palm worms, scale worms
-lookat pan=160 tilt=87 speed=5
+# Blue ciliates on bottom left replaced by white filamentous bacteria
+lookat pan=132 tilt=120 speed=5
 sleep 5
 camera zoom=6
+# Increase lights
+lights 75
 sleep 5
 camera zoom=6
+# Increase lights
+lights 100
 twait 14:59:00
 camera zoom=-13
+# Reduce lights to nominal
+lights 50
 twait 15:00:00
 ############################################################################
 # Biological scene 5
-# Middle right of vent; tube worms, palm worms, limpets
-lookat pan=165 tilt=87 speed=5
+# "fleas" (white material in center, currently blocked by chimney in front)
+lookat pan=151 tilt=115 speed=5
 sleep 5
 camera zoom=6
+# Increase lights
+lights 75
 sleep 5
 camera zoom=6
+# Increase lights
+lights 100
 twait 17:59:00
 camera zoom=-13
+# Reduce lights to nominal
+lights 50
 twait 18:00:00
 ############################################################################
 # Biological scene 6
-# Right side of vent; more limpets, fewer worms
-lookat pan=170 tilt=87 speed=5
+# Vent base, fewer pycnogonids, color correction card;
+# had to move to the right to avoid brush
+lookat pan=168 tilt=130 speed=5
 sleep 5
 camera zoom=6
+# Increase lights
+lights 75
 sleep 5
 camera zoom=6
+# Increase lights
+lights 100
 twait 20:59:00
 camera zoom=-13
+# Reduce lights to nominal
+lights 50
 twait 21:00:00
 ############################################################################
-# Biological scene 7
-# Right edge of vent; Limpets and tube worms
-lookat pan=175 tilt=87 speed=5
+# Geophysical position 1
+# White chimney on right side with limpets & palm worms; seems dormant
+lookat pan=170 tilt=107 speed=5
 sleep 5
 camera zoom=6
+# Increase lights
+lights 75
 sleep 5
 camera zoom=6
+# Increase lights
+lights 100
 twait 23:55:00
 camera zoom=-13
+# Reduce lights to nominal
+lights 50
 sleep 5
 ############################################################################
-# Move to parking position
-lookat pan=168 tilt=87 speed=5
+# Move to parking position, point camera down a bit to avoid picking up
+# material on lens
+lookat pan=148 tilt=123 speed=5
 sleep 5
 ############################################################################
 # Stop recording and end stream
