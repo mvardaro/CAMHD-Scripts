@@ -151,7 +151,7 @@ lights 50
 twait 12:28
 ############################################################################
 # Geophysical position 1
-# White chimney on right side with limpets & palm worms; seems dormant
+# White chimney on right side with limpets & palm worms; no longer dormant
 lookat pan=196 tilt=110 speed=5
 sleep 5
 camera zoom=6
